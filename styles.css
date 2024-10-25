@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  color: #4caf50;
+}
+
+main {
+  padding: 20px;
+}
+
+.dashboard-summary p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Estilos para saldo positivo e negativo */
+#saldosTotais {
+  font-weight: bold;
+}
+
+.saldo-positivo {
+  color: green;
+}
+
+.saldo-negativo {
+  color: red;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.AddGastos {
+  background-color: #f02d13;
+}
+.AddGastos:hover {
+  background-color: #bd1a04;
+}
+.AddLucro {
+  background-color: #4caf50;
+}
+.AddLucro:hover {
+  background-color: #297c2d;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #e0e0e0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
