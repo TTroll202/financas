@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organização Financeira</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Organização Financeira</h1>
+      <nav>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#gastos">Registrar Gastos</a></li>
+          <li><a href="#lucros">Registrar Lucros</a></li>
+          <li><a href="#relatorios">Relatórios</a></li>
+          <li><a href="#dicas">Dicas Financeiras</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="dashboard">
+        <h2>Dashboard</h2>
+        <div class="dashboard-summary">
+          <p>Gastos Totais: R$ <span id="gastosTotais">0,00</span></p>
+          <p>Lucros Totais: R$ <span id="lucrosTotais">0,00</span></p>
+          <p>Saldos Totais: R$ <span id="saldosTotais">0,00</span></p>
+        </div>
+        <div id="grafico"></div>
+        <!-- Placeholder para gráfico -->
+      </section>
+
+      <section id="gastos">
+        <h2>Registrar Gastos</h2>
+        <form id="formGastos">
+          <label for="dataGasto">Data:</label>
+          <input type="date" id="dataGasto" required />
+
+          <label for="descricaoGasto">Descrição:</label>
+          <input type="text" id="descricaoGasto" required />
+
+          <label for="valorGasto">Valor:</label>
+          <input type="text" id="valorGasto" required />
+
+          <label for="categoriaGasto">Categoria:</label>
+          <select id="categoriaGasto">
+            <option value="alimentacao">Alimentação</option>
+            <option value="transporte">Transporte</option>
+            <option value="outros">Outros</option>
+          </select>
+          <label for="bancoGasto">Banco:</label>
+          <select id="bancoGasto" required>
+            <option value="Banco A">Banco A</option>
+            <option value="Banco B">Banco B</option>
+            <option value="Banco C">Banco C</option>
+          </select>
+
+          <button class="AddGastos" type="submit">Adicionar Gasto</button>
+        </form>
+      </section>
+
+      <section id="lucros">
+        <h2>Registrar Lucros</h2>
+        <form id="formLucros">
+          <label for="dataLucro">Data:</label>
+          <input type="date" id="dataLucro" required />
+
+          <label for="descricaoLucro">Fonte de Lucro:</label>
+          <input type="text" id="descricaoLucro" required />
+
+          <label for="valorLucro">Valor:</label>
+          <input type="text" id="valorLucro" required />
+
+          <label for="bancoLucro">Banco:</label>
+          <select id="bancoLucro" required>
+            <option value="Banco A">Banco A</option>
+            <option value="Banco B">Banco B</option>
+            <option value="Banco C">Banco C</option>
+          </select>
+
+          <button class="AddLucro" type="submit">Adicionar Lucro</button>
+        </form>
+      </section>
+
+      <section id="relatorios">
+        <h2>Relatórios</h2>
+        <p>Aqui você poderá visualizar seus relatórios financeiros.</p>
+      </section>
+
+      <section id="dicas">
+        <h2>Dicas Financeiras</h2>
+        <p>Dicas sobre como gerenciar suas finanças.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Organização Financeira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
